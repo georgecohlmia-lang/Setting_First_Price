@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>First Price Worksheet — FoundersPath</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>First Price Worksheet — Two Weeks Out</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --navy:     #1E2A3A;
-    --navy-2:   #2D4059;
-    --navy-dk:  #0F1923;
-    --gold:     #C8972A;
-    --gold-dk:  #B07D1E;
-    --gold-lt:  #FFF8E8;
-    --red:      #C0392B;
-    --teal:     #0D6E8A;
-    --cream:    #F2EDE6;
-    --cream-dk: #E8DFD3;
-    --slate:    #94A3B8;
-    --paper:    #FAF7F0;
-    --ink:      #1E2A3A;
-    --ink-soft: #2D4059;
-    --rule:     #DDD3C0;
-    --font-display: 'Source Serif 4', Georgia, serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+  :root{
+    --navy:#10131a;
+    --navy-2:#2c313c;
+    --navy-dk:#10131a;
+    --gold:#2747f5;
+    --gold-dk:#2747f5;
+    --gold-lt:#e9ecf5;
+    --red:#b3261e;
+    --teal:#2747f5;
+    --cream:#e9ecf5;
+    --cream-dk:#d5d9e4;
+    --slate:#9ba3af;
+    --paper:#fbfaf6;
+    --ink:#10131a;
+    --ink-soft:#10131a;
+    --rule:#d5d9e4;
+    --font-display:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
     background: var(--paper); color: var(--ink);
-    font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 17px; line-height: 1.6;
     min-height: 100vh; -webkit-font-smoothing: antialiased;
   }
   .frame { max-width: 920px; margin: 0 auto; padding: 56px 40px 120px; }
@@ -38,18 +35,17 @@
   .masthead { border-bottom: 1px solid var(--rule); padding-bottom: 36px; margin-bottom: 48px; }
   .brand-stripe {
     display: flex; align-items: center; gap: 14px;
-    font-family: var(--font-body); font-size: 11px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px;
     font-weight: 700; letter-spacing: 0.22em;
     color: var(--gold); margin-bottom: 28px;
   }
   .brand-stripe::after { content: ''; flex: 1; height: 1px; background: var(--cream-dk); }
   h1.title {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 56px; line-height: 1.05; letter-spacing: -0.01em;
-    color: var(--navy); margin-bottom: 18px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 56px; line-height: 1.05;letter-spacing:-.03em;
+    color: var(--navy); margin-bottom: 18px;font-style:normal;}
   h1.title em { font-style: italic; color: var(--gold); font-weight: 500; }
-  .deck { font-family: var(--font-display); font-style: italic; font-size: 19px; color: var(--ink-soft); max-width: 660px; }
+  .deck { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal; font-size: 19px; color: var(--ink-soft); max-width: 660px; }
 
   .progress { display: flex; gap: 4px; margin: 40px 0 20px; }
   .progress-step { flex: 1; height: 3px; background: var(--cream-dk); transition: background 0.4s; }
@@ -57,8 +53,7 @@
   .progress-step.done { background: var(--navy); }
   .progress-label {
     display: flex; justify-content: space-between;
-    font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
-    color: var(--slate); text-transform: uppercase;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.12em;color:#59616e; text-transform: uppercase;
     margin-bottom: 48px; gap: 12px;
   }
   .progress-label span.current { color: var(--navy); }
@@ -71,15 +66,14 @@
   }
   .panel-header { margin-bottom: 36px; }
   .panel-eyebrow {
-    font-family: var(--font-body); font-size: 11px; font-weight: 700;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px; font-weight: 700;
     letter-spacing: 0.22em; color: var(--red); margin-bottom: 14px;
   }
   .panel-title {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 36px; line-height: 1.1; color: var(--navy); margin-bottom: 12px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 36px; line-height: 1.1; color: var(--navy); margin-bottom: 12px;letter-spacing:-.03em;font-style:normal;}
   .panel-intro {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 18px; color: var(--ink-soft); max-width: 660px;
   }
 
@@ -89,15 +83,15 @@
     border-left: 6px solid var(--red);
   }
   .warning-label {
-    font-family: var(--font-body); font-weight: 700; font-size: 11px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.22em; color: var(--gold); margin-bottom: 10px;
   }
   .warning-headline {
-    font-family: var(--font-display); font-weight: 600; font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600;font-style:normal;
     font-size: 20px; color: white; line-height: 1.35;
   }
   .warning-body {
-    font-family: var(--font-body); font-size: 14px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 14px;
     color: var(--cream-dk); line-height: 1.55; margin-top: 10px;
   }
 
@@ -105,17 +99,16 @@
   .field { margin-bottom: 28px; }
   .field-label {
     display: block;
-    font-family: var(--font-body); font-weight: 600; font-size: 13px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600; font-size: 13px;
     letter-spacing: 0.04em; color: var(--navy); margin-bottom: 6px;
   }
   .field-help {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 15px; color: var(--ink-soft); margin-bottom: 8px;
     line-height: 1.55;
   }
   .field-example {
-    font-family: var(--font-body); font-size: 13px;
-    color: var(--slate); margin-bottom: 12px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13px;color:#59616e; margin-bottom: 12px;
     padding-left: 10px; border-left: 2px solid var(--cream-dk);
     line-height: 1.55;
   }
@@ -127,21 +120,21 @@
   .copy-link {
     flex-shrink: 0; background: transparent;
     border: 1px solid var(--cream-dk); color: var(--gold-dk);
-    font-family: var(--font-body); font-size: 10px; font-weight: 700;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 10px; font-weight: 700;
     letter-spacing: 0.14em; text-transform: uppercase;
     padding: 5px 10px; cursor: pointer;
     transition: all 0.15s; white-space: nowrap;
   }
   .copy-link:hover { background: var(--gold-lt); border-color: var(--gold); color: var(--navy); }
-  .copy-link.copied { background: var(--teal); border-color: var(--teal); color: white; }
+  .copy-link.copied { background: var(--teal);border-color:#ffffff; color: white; }
 
   input[type="text"], input[type="number"], textarea, select {
     width: 100%; background: white;
     border: 1px solid var(--cream-dk);
     border-bottom: 2px solid var(--navy);
     padding: 13px 16px;
-    font-family: var(--font-body); font-size: 15px;
-    color: var(--navy); border-radius: 0;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 15px;
+    color: var(--navy); border-radius:0;
     transition: border-color 0.2s, background 0.2s;
   }
   input:focus, textarea:focus, select:focus {
@@ -155,8 +148,7 @@
   .currency-prefix { position: relative; }
   .currency-prefix::before {
     content: '$';
-    position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
-    color: var(--slate); font-weight: 600;
+    position: absolute; left: 16px; top: 50%; transform: translateY(-50%);color:#59616e; font-weight: 600;
     pointer-events: none; z-index: 1;
   }
   .currency-prefix input { padding-left: 30px; }
@@ -164,8 +156,7 @@
   .pct-suffix { position: relative; }
   .pct-suffix::after {
     content: '%';
-    position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
-    color: var(--slate); font-weight: 600;
+    position: absolute; right: 16px; top: 50%; transform: translateY(-50%);color:#59616e; font-weight: 600;
     pointer-events: none;
   }
   .pct-suffix input { padding-right: 30px; }
@@ -180,17 +171,16 @@
   }
   .sub-card-tag {
     display: inline-block;
-    font-family: var(--font-body); font-weight: 700; font-size: 10px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 700; font-size: 10px;
     letter-spacing: 0.18em; text-transform: uppercase;
     padding: 2px 8px; margin-bottom: 12px;
-    background: var(--gold); color: var(--navy);
+    background: var(--gold);color:#ffffff;
   }
   .sub-card-title {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 19px; color: var(--navy); margin-bottom: 4px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 19px; color: var(--navy); margin-bottom: 4px;letter-spacing:-.03em;font-style:normal;}
   .sub-card-help {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 14px; color: var(--ink-soft); margin-bottom: 18px;
   }
 
@@ -205,19 +195,18 @@
     align-items: baseline;
   }
   .cost-summary-label {
-    font-family: var(--font-body); font-size: 12px; font-weight: 600;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 12px; font-weight: 600;
     letter-spacing: 0.06em; color: var(--ink-soft);
     text-transform: uppercase;
   }
   .cost-summary-value {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 26px; color: var(--navy);
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 26px; color: var(--navy);letter-spacing:-.03em;font-style:normal;line-height:1.04;}
 
   /* nav */
   .nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--rule); }
   .btn {
-    font-family: var(--font-body); font-weight: 600; font-size: 13px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600; font-size: 13px;
     letter-spacing: 0.12em; text-transform: uppercase;
     padding: 14px 28px; cursor: pointer; border: none;
     transition: background 0.15s, color 0.15s, transform 0.1s;
@@ -242,36 +231,33 @@
     margin-bottom: 40px;
   }
   .output-title {
-    font-family: var(--font-display); font-weight: 600;
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
     font-size: 44px; line-height: 1.05;
-    color: var(--navy); margin-bottom: 12px;
-  }
+    color: var(--navy); margin-bottom: 12px;letter-spacing:-.03em;font-style:normal;}
   .output-title em { color: var(--gold); font-style: italic; font-weight: 500; }
   .output-sub {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 18px; color: var(--ink-soft);
   }
   .output-meta {
     display: flex; gap: 32px; margin-top: 20px;
-    font-family: var(--font-body); font-size: 12px;
-    color: var(--slate); letter-spacing: 0.08em; text-transform: uppercase;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 12px;color:#59616e; letter-spacing: 0.08em; text-transform: uppercase;
     flex-wrap: wrap;
   }
   .output-meta span strong {
     color: var(--navy); display: block; font-size: 16px;
     letter-spacing: 0; text-transform: none; margin-top: 2px;
-    font-family: var(--font-display); font-weight: 600;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600;
   }
 
   .section { margin-bottom: 48px; }
   .section-eyebrow {
-    font-family: var(--font-body); font-weight: 700; font-size: 11px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.22em; color: var(--red); margin-bottom: 10px;
   }
   .section-title {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 28px; line-height: 1.15; color: var(--navy); margin-bottom: 16px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 28px; line-height: 1.15; color: var(--navy); margin-bottom: 16px;letter-spacing:-.03em;font-style:normal;}
   .section p {
     margin-bottom: 14px; line-height: 1.65; color: var(--ink-soft);
     font-size: 15.5px;
@@ -287,20 +273,19 @@
   }
   .price-card .price-tag {
     display: inline-block;
-    background: var(--gold); color: var(--navy);
-    font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+    background: var(--gold);color:#ffffff;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 10.5px; font-weight: 700;
     letter-spacing: 0.18em; text-transform: uppercase;
     padding: 4px 12px; margin-bottom: 16px;
   }
   .price-card h3 {
-    font-family: var(--font-display); font-weight: 600;
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
     font-size: 28px; color: var(--navy); margin-bottom: 8px;
-    line-height: 1.1;
-  }
+    line-height: 1.1;letter-spacing:-.03em;font-style:normal;}
   .price-card .price-tagline {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 16px; color: var(--ink-soft); margin-bottom: 24px;
-    padding-bottom: 18px; border-bottom: 1px solid rgba(200, 151, 42, 0.4);
+    padding-bottom: 18px; border-bottom: 1px solid rgba(39,71,245,0.4);
   }
 
   /* the price comparison grid */
@@ -309,36 +294,35 @@
     grid-template-columns: 1fr 1fr;
     gap: 0;
     margin: 16px 0 24px;
-    border: 1px solid rgba(200, 151, 42, 0.5);
+    border: 1px solid rgba(39,71,245,0.5);
     background: white;
   }
   @media (max-width: 600px) { .price-grid { grid-template-columns: 1fr; } }
   .price-cell {
     padding: 22px 24px;
-    border-right: 1px solid rgba(200, 151, 42, 0.3);
+    border-right: 1px solid rgba(39,71,245,0.3);
   }
   .price-cell:last-child { border-right: none; }
   @media (max-width: 600px) {
-    .price-cell { border-right: none; border-bottom: 1px solid rgba(200, 151, 42, 0.3); }
+    .price-cell { border-right: none; border-bottom: 1px solid rgba(39,71,245,0.3); }
     .price-cell:last-child { border-bottom: none; }
   }
   .price-cell.primary {
     background: var(--gold-lt);
   }
   .price-cell-label {
-    font-family: var(--font-body); font-size: 10px; font-weight: 700;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 10px; font-weight: 700;
     letter-spacing: 0.18em; color: var(--red); text-transform: uppercase;
     margin-bottom: 6px;
   }
   .price-cell-value {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 36px; color: var(--navy); line-height: 1; margin-bottom: 6px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 36px; color: var(--navy); line-height: 1; margin-bottom: 6px;letter-spacing:-.03em;font-style:normal;}
   .price-cell.primary .price-cell-value {
     font-size: 44px; color: var(--gold-dk);
   }
   .price-cell-detail {
-    font-family: var(--font-body); font-size: 12.5px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 12.5px;
     color: var(--ink-soft); line-height: 1.5;
   }
 
@@ -346,30 +330,29 @@
   .math-block {
     margin: 20px 0;
     padding-bottom: 20px;
-    border-bottom: 1px dashed rgba(200, 151, 42, 0.4);
+    border-bottom: 1px dashed rgba(39,71,245,0.4);
   }
   .math-block:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
   .math-block-label {
-    font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 10.5px; font-weight: 700;
     letter-spacing: 0.18em; color: var(--red); text-transform: uppercase;
     margin-bottom: 10px;
   }
   .math-row {
     display: flex; justify-content: space-between; align-items: baseline;
     padding: 6px 0;
-    font-family: var(--font-body); font-size: 14px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 14px;
     color: var(--ink-soft);
   }
   .math-row.total {
-    border-top: 1px solid rgba(200, 151, 42, 0.4);
+    border-top: 1px solid rgba(39,71,245,0.4);
     margin-top: 6px; padding-top: 12px;
     font-weight: 700; color: var(--navy);
   }
-  .math-row .label { font-family: var(--font-body); }
+  .math-row .label { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; }
   .math-row .value {
-    font-family: var(--font-display); font-weight: 600;
-    color: var(--navy);
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    color: var(--navy);letter-spacing:-.03em;font-style:normal;}
   .math-row.total .value { font-size: 20px; }
 
   /* verdict tier */
@@ -383,16 +366,15 @@
   .verdict.amber { border-left-color: var(--gold); }
   .verdict.red { border-left-color: var(--red); }
   .verdict-label {
-    font-family: var(--font-body); font-weight: 700; font-size: 10.5px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 700; font-size: 10.5px;
     letter-spacing: 0.22em; margin-bottom: 8px;
   }
   .verdict.green .verdict-label { color: var(--teal); }
   .verdict.amber .verdict-label { color: var(--gold-dk); }
   .verdict.red .verdict-label { color: var(--red); }
   .verdict-headline {
-    font-family: var(--font-display); font-weight: 600; font-size: 20px;
-    color: var(--navy); margin-bottom: 8px; line-height: 1.3;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800; font-size: 20px;
+    color: var(--navy); margin-bottom: 8px; line-height: 1.3;letter-spacing:-.03em;font-style:normal;}
   .verdict-body {
     color: var(--ink-soft); font-size: 14.5px; line-height: 1.6;
   }
@@ -403,15 +385,14 @@
     padding: 36px 40px; margin: 20px 0;
   }
   .framing-card .framing-header {
-    font-family: var(--font-body); font-size: 11px; font-weight: 700;
-    letter-spacing: 0.22em; color: var(--gold); margin-bottom: 6px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.22em;color:#93abff; margin-bottom: 6px;
   }
   .framing-card h3 {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 24px; color: white; margin-bottom: 8px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 24px; color: white; margin-bottom: 8px;letter-spacing:-.03em;font-style:normal;}
   .framing-sub {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 16px; color: var(--cream-dk); margin-bottom: 22px;
     padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.15);
   }
@@ -422,17 +403,17 @@
   }
   .framing-block:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
   .framing-block-label {
-    font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 10.5px; font-weight: 700;
     letter-spacing: 0.18em; color: var(--gold); margin-bottom: 8px;
   }
   .framing-quote {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 19px; color: white; line-height: 1.5;
     padding-left: 16px; border-left: 3px solid var(--gold);
     margin-bottom: 14px;
   }
   .framing-coach {
-    font-family: var(--font-body); font-size: 13px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13px;
     color: var(--cream-dk); line-height: 1.55;
   }
   .framing-coach strong { color: var(--gold); }
@@ -459,13 +440,12 @@
     margin-top: 56px; padding-top: 28px;
     border-top: 1px solid var(--rule);
     display: flex; justify-content: space-between; align-items: baseline;
-    font-family: var(--font-body); font-size: 11px;
-    letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--slate);
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px;
+    letter-spacing: 0.18em; text-transform: uppercase;color:#59616e;
   }
   .signature .left { color: var(--gold); font-weight: 700; }
   .hint {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 13px; color: var(--red); margin-top: 6px;
   }
 
@@ -489,13 +469,31 @@
     .signature { page-break-inside: avoid; }
     #artifact-2, #artifact-3 { page-break-before: always; }
   }
+
+/* Two Weeks Out module band, October 2026 system */
+.two-band{display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:center;padding:12px 24px;background:#9B9BFF;color:#10131a;border-bottom:2px solid #10131a;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.two-band .two-wm{font-family:'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;font-size:17px;letter-spacing:-.03em;line-height:1;color:#10131a}
+.two-band .two-mod{font-family:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;line-height:1.3;color:#10131a}
+body{-webkit-font-smoothing:antialiased}
+@media print{.two-band{display:none !important}}
+/* shared touches, October 2026 system */
+button,select,optgroup,option{font-family:inherit}
+input[type=checkbox],input[type=radio],input[type=range]{accent-color:#2747f5}
+h1 em,h1 i{font-style:normal !important;font-weight:inherit !important;color:inherit !important;background:linear-gradient(#ff5a1f,#ff5a1f) left calc(100% - .04em)/100% .09em no-repeat;padding-bottom:.02em;-webkit-box-decoration-break:clone;box-decoration-break:clone;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+/* contrast on dark and tinted blocks */
+div.warning-callout div.warning-label{color:#93abff}
+div.price-card span.label > span{color:#10131a !important}
+div.framing-card p.framing-sub{color:#fbfaf6}
+div.framing-card div.framing-block-label{color:#93abff}
+div.framing-card div.framing-coach > strong{color:#93abff}
 </style>
 </head>
 <body>
+<div class="two-band"><span class="two-wm">Two Weeks Out</span><span class="two-mod">04 / Price for Profit</span></div>
 <div class="frame">
 
 <header class="masthead" id="masthead">
-  <div class="brand-stripe">FOUNDERSPATH  ·  FIRST PRICE WORKSHEET</div>
+  <div class="brand-stripe">Two Weeks Out  ·  FIRST PRICE WORKSHEET</div>
   <h1 class="title">Set a <em>Defensible</em><br>First Price.</h1>
   <p class="deck">Build your price from four real inputs — what it costs you, the margin you need, what the market charges, and what you're really delivering. The worksheet does the math. You walk away with a price you can defend, the way to talk about it, and the future increase already built into your first conversation.</p>
 </header>
@@ -518,7 +516,7 @@
   <div class="panel-header">
     <div class="panel-eyebrow">STEP ONE  ·  YOUR BUSINESS &amp; YOUR GUT NUMBER</div>
     <h2 class="panel-title">A few details — and the price you'd set today.</h2>
-    <p class="panel-intro">Your gut estimate is calibration for the diagnostic. After the four inputs, the worksheet shows you the gap between your gut and the defensible number. The lesson's example: founder's gut $65, defensible $109 — a 68% gap that determined whether her business worked.</p>
+    <p class="panel-intro">Your gut estimate is calibration for the diagnostic. After the four inputs, the worksheet shows you the gap between your gut and the defensible number. The session's example: owner's gut $65, defensible $109 — a 68% gap that determined whether her business worked.</p>
   </div>
 
   <div class="warning-callout">
@@ -529,13 +527,13 @@
 
   <div class="field">
     <label class="field-label" for="biz-name">Business or product name</label>
-    <input type="text" id="biz-name" placeholder="What you'd call it talking to a friend">
+    <input type="text" id="biz-name" placeholder="What you&#39;d call it talking to a friend">
   </div>
 
   <div class="field">
     <label class="field-label" for="what-priced">What are you pricing?</label>
     <p class="field-help">A single offer at a single price point. If you have multiple offers, run the worksheet once per offer.</p>
-    <p class="field-example">e.g., "Wholesale skincare protocol kit" / "Bookkeeping retainer for service businesses" / "Coaching engagement, six months"</p>
+    <p class="field-example">e.g., "Skincare protocol kit" / "Bookkeeping retainer for service businesses" / "Coaching engagement, six months"</p>
     <input type="text" id="what-priced" maxlength="120" placeholder="The specific offer this price applies to">
   </div>
 
@@ -572,7 +570,7 @@
   <div class="sub-card">
     <div class="sub-card-tag">INPUT 01  ·  FULLY LOADED UNIT COST</div>
     <div class="sub-card-title">Every cost that goes into delivering one unit.</div>
-    <p class="sub-card-help">Pick the business type that matches what you're delivering. The cost categories adjust to fit. Founders routinely undercount their own time and effort — the lesson is direct: include it. Without your fully loaded cost, you can't set a defensible price.</p>
+    <p class="sub-card-help">Pick the business type that matches what you're delivering. The cost categories adjust to fit. owners routinely undercount their own time and effort — the session is direct: include it. Without your fully loaded cost, you can't set a defensible price.</p>
 
     <div class="field" style="margin-bottom: 22px;">
       <label class="field-label" for="biz-type">What type of business is this?</label>
@@ -586,7 +584,7 @@
     </div>
 
     <div id="cost-fields-container">
-      <p style="font-family: var(--font-display); font-style: italic; font-size: 14px; color: var(--slate); padding: 14px 0;">Pick a business type above to see the cost categories that apply.</p>
+      <p style="font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal; font-size: 14px; color: var(--slate); padding: 14px 0;">Pick a business type above to see the cost categories that apply.</p>
     </div>
 
     <div class="cost-summary">
@@ -599,11 +597,11 @@
   <div class="sub-card">
     <div class="sub-card-tag">INPUT 02  ·  TARGET GROSS MARGIN</div>
     <div class="sub-card-title">Margin enough to fund the business — not a ceiling.</div>
-    <p class="sub-card-help">Pick your industry to anchor against the typical gross-margin range for that category. The dropdown auto-fills the midpoint; you can adjust the number to match what your specific business actually needs. The lesson's threshold: the margin funds your marketing, channel discounts, returns, and your draw \u2014 start with what the business needs, not what the market lets you get away with.</p>
+    <p class="sub-card-help">Pick your industry to anchor against the typical gross-margin range for that category. The dropdown auto-fills the midpoint; you can adjust the number to match what your specific business actually needs. The session's threshold: the margin funds your marketing, channel discounts, returns, and your draw — start with what the business needs, not what the market lets you get away with.</p>
 
     <div class="field" style="margin-bottom: 18px;">
       <label class="field-label" for="industry-bench">Industry benchmark</label>
-      <p class="field-help">Pick the closest match. Each option shows the typical gross-margin range for sustainable businesses in that category. \u201CCustom\u201D lets you enter any number directly.</p>
+      <p class="field-help">Pick the closest match. Each option shows the typical gross-margin range for sustainable businesses in that category. “Custom” lets you enter any number directly.</p>
       <select id="industry-bench" onchange="applyIndustryBenchmark()">
         <option value="">— Pick one —</option>
         <option value="saas" data-low="70" data-high="85" data-mid="78">Software / SaaS  —  typical gross margin: 70 to 85%</option>
@@ -623,7 +621,7 @@
 
     <div class="field" style="margin-bottom: 0;">
       <label class="field-label" for="target-margin">Target gross margin (%)</label>
-      <p class="field-help">Auto-filled to the midpoint of your industry's typical range. Adjust freely \u2014 the right answer is the margin your specific business actually needs.</p>
+      <p class="field-help">Auto-filled to the midpoint of your industry's typical range. Adjust freely — the right answer is the margin your specific business actually needs.</p>
       <div class="pct-suffix">
         <input type="number" id="target-margin" placeholder="—" min="0" max="95" step="1">
       </div>
@@ -665,15 +663,15 @@
   <div class="sub-card">
     <div class="sub-card-tag">INPUT 04  ·  VALUE TO THE BUYER</div>
     <div class="sub-card-title">What problem you're actually solving — for whom — in what state.</div>
-    <p class="sub-card-help">The lesson's example: a patient managing chemo skin toxicity isn't making a discretionary purchase. They're managing a medical side effect that affects their treatment. Price honestly against what you're delivering — not against what feels comfortable to ask.</p>
+    <p class="sub-card-help">The session's example: a patient managing chemo skin toxicity isn't making a discretionary purchase. They're managing a medical side effect that affects their treatment. Price honestly against what you're delivering — not against what feels comfortable to ask.</p>
 
     <div class="field" style="margin-bottom: 0;">
       <label class="field-label" for="value-statement">In one sentence: what problem are you solving, for whom, in what state?</label>
       <p class="field-example with-copy">
         <span class="ex-text">"A patient managing chemotherapy skin toxicity, navigating active treatment, looking for products that address neuropathy, dryness, and inflammation that off-the-shelf skincare doesn't touch."</span>
-        <button type="button" class="copy-link" data-example="A patient managing chemotherapy skin toxicity, navigating active treatment, looking for products that address neuropathy, dryness, and inflammation that off-the-shelf skincare doesn&#39;t touch." onclick="useExample(this, 'value-statement')">Use example</button>
+        <button type="button" class="copy-link" data-example="A patient managing chemotherapy skin toxicity, navigating active treatment, looking for products that address neuropathy, dryness, and inflammation that off-the-shelf skincare doesn&#39;t touch." onclick="useExample(this, &#39;value-statement&#39;)">Use example</button>
       </p>
-      <textarea id="value-statement" maxlength="280" placeholder="Specific. Customer + their state + the problem they're solving. Not generic value language."></textarea>
+      <textarea id="value-statement" maxlength="280" placeholder="Specific. Customer + their state + the problem they&#39;re solving. Not generic value language."></textarea>
     </div>
   </div>
 
@@ -681,7 +679,7 @@
     <button class="btn btn-secondary" onclick="goTo(1)">←  Back</button>
     <button class="btn btn-primary" onclick="goTo(3)">Continue  →</button>
   </div>
-  <p class="hint" id="inputs-hint" hidden style="text-align:right;">Please complete all four inputs before continuing.</p>
+  <p class="hint" id="inputs-hint" hidden="" style="text-align:right;">Please complete all four inputs before continuing.</p>
 </section>
 
 <!-- ============ PANEL 3 — FRAMING ============ -->
@@ -689,19 +687,19 @@
   <div class="panel-header">
     <div class="panel-eyebrow">STEP THREE  ·  FRAMING &amp; FUTURE INCREASE</div>
     <h2 class="panel-title">Two pieces of language. The early-adopter framing, and the future-increase trigger.</h2>
-    <p class="panel-intro">The lesson's argument: your first price isn't low because you're worth less. It's a deliberate founding-client offer. The framing matters as much as the number, and the future increase needs to be named at the start — not surprising clients twelve months later.</p>
+    <p class="panel-intro">The session's argument: your first price isn't low because you're worth less. It's a deliberate founding-client offer. The framing matters as much as the number, and the future increase needs to be named at the start — not surprising clients twelve months later.</p>
   </div>
 
   <!-- FOUNDING-CLIENT POSITIONING -->
   <div class="sub-card" style="border-left-color: var(--teal);">
     <div class="sub-card-tag" style="background: var(--teal); color: white;">PIECE 01  ·  EARLY-ADOPTER POSITIONING</div>
     <div class="sub-card-title">The one sentence that frames the founding-client offer.</div>
-    <p class="sub-card-help">The lesson is direct: <em>"Introductory rate while we build our clinical reference base"</em> sounds completely different from <em>"we're still figuring out what to charge."</em> One is deliberate. The other is uncertain. Write your version.</p>
+    <p class="sub-card-help">The session is direct: <em>"Introductory rate while we build our clinical reference base"</em> sounds completely different from <em>"we're still figuring out what to charge."</em> One is deliberate. The other is uncertain. Write your version.</p>
 
     <div class="field-row">
       <div class="field">
         <label class="field-label" for="discount-pct">Founding-client discount (%)</label>
-        <p class="field-help">The lesson's example: 20% off the defensible price. Standard range: 15–25%. Below 10% isn't enough to feel like a deliberate offer; above 30% structurally undermines the price.</p>
+        <p class="field-help">The session's example: 20% off the defensible price. Standard range: 15–25%. Below 10% isn't enough to feel like a deliberate offer; above 30% structurally undermines the price.</p>
         <div class="pct-suffix">
           <input type="number" id="discount-pct" placeholder="20" min="0" max="50" step="1">
         </div>
@@ -718,7 +716,7 @@
       <p class="field-help">What you're building, why the founding cohort matters, what they get in return. The deliberate framing.</p>
       <p class="field-example with-copy">
         <span class="ex-text">"Introductory rate for founding clinics while we build our clinical outcomes documentation — a deliberate choice to establish reference relationships in exchange for feedback and referrals."</span>
-        <button type="button" class="copy-link" data-example="Introductory rate for founding clinics while we build our clinical outcomes documentation \u2014 a deliberate choice to establish reference relationships in exchange for feedback and referrals." onclick="useExample(this, 'positioning-statement')">Use example</button>
+        <button type="button" class="copy-link" data-example="Introductory rate for founding clinics while we build our clinical outcomes documentation — a deliberate choice to establish reference relationships in exchange for feedback and referrals." onclick="useExample(this, &#39;positioning-statement&#39;)">Use example</button>
       </p>
       <textarea id="positioning-statement" maxlength="280" placeholder="Deliberate. Specific. Names the trade — founding-client price for early reference value."></textarea>
     </div>
@@ -728,7 +726,7 @@
   <div class="sub-card" style="border-left-color: var(--gold);">
     <div class="sub-card-tag">PIECE 02  ·  THE FUTURE-INCREASE TRIGGER</div>
     <div class="sub-card-title">Build the price increase into the first conversation.</div>
-    <p class="sub-card-help">The lesson is direct: founders who skip this come back twelve months later with thirty clients at a price they can't raise. Name the trigger and timeframe at the start. The increase is expected, not surprising.</p>
+    <p class="sub-card-help">The session is direct: owners who skip this come back twelve months later with thirty clients at a price they can't raise. Name the trigger and timeframe at the start. The increase is expected, not surprising.</p>
 
     <div class="field-row">
       <div class="field">
@@ -745,10 +743,10 @@
 
     <div class="field" style="margin-bottom: 0;">
       <label class="field-label" for="lockin-language">What founding clients get for joining now (the lock-in incentive)</label>
-      <p class="field-help">The lesson's example: "Clinics that come on board now lock in the founding rate for their first year." A specific protection that turns the future increase into an incentive to act now.</p>
+      <p class="field-help">The session's example: "Clinics that come on board now lock in the founding rate for their first year." A specific protection that turns the future increase into an incentive to act now.</p>
       <p class="field-example with-copy">
         <span class="ex-text">"Clinics that come on board now lock in the founding rate for their first twelve months, regardless of when the price increase takes effect."</span>
-        <button type="button" class="copy-link" data-example="Clinics that come on board now lock in the founding rate for their first twelve months, regardless of when the price increase takes effect." onclick="useExample(this, 'lockin-language')">Use example</button>
+        <button type="button" class="copy-link" data-example="Clinics that come on board now lock in the founding rate for their first twelve months, regardless of when the price increase takes effect." onclick="useExample(this, &#39;lockin-language&#39;)">Use example</button>
       </p>
       <textarea id="lockin-language" maxlength="240" placeholder="What protection do founding clients get? Be specific about duration."></textarea>
     </div>
@@ -758,7 +756,7 @@
     <button class="btn btn-secondary" onclick="goTo(2)">←  Back</button>
     <button class="btn btn-primary" id="generate-btn" onclick="generateOutput()">Generate My First Price  →</button>
   </div>
-  <p class="hint" id="generate-hint" hidden style="text-align:right;">Please complete all fields before generating.</p>
+  <p class="hint" id="generate-hint" hidden="" style="text-align:right;">Please complete all fields before generating.</p>
 </section>
 
 <!-- ============ OUTPUT ============ -->
@@ -783,7 +781,7 @@
     },
     service: {
       fields: [
-        { id: 'cost-time', label: 'Your time, at a realistic rate', help: 'Hours per engagement \u00d7 what you\'d pay someone else with your skill. The most undercounted line for service founders.', row: 1 },
+        { id: 'cost-time', label: 'Your time, at a realistic rate', help: 'Hours per engagement \u00d7 what you\'d pay someone else with your skill. The most undercounted line for service owners.', row: 1 },
         { id: 'cost-subcontract', label: 'Subcontract labor', help: 'External professionals or contractors you bring in to deliver the work \u2014 specialists, freelancers, agencies. Per engagement.', row: 1 },
         { id: 'cost-tools', label: 'Software &amp; tools used in delivery', help: 'Per-engagement cost of platforms specific to delivering this service \u2014 e.g., a CRM seat, a design tool, a video platform. Not your general overhead.', row: 2 },
         { id: 'cost-onboarding', label: 'Onboarding &amp; client materials', help: 'Welcome packets, intake materials, kickoff documents, anything you produce per client. Zero if not applicable.', row: 2 },
@@ -796,7 +794,7 @@
         { id: 'cost-thirdparty', label: 'Third-party APIs &amp; services', help: 'Per-customer cost of services your product depends on \u2014 e.g., email delivery, geocoding, AI inference, analytics, search. Most underestimated line in SaaS.', row: 1 },
         { id: 'cost-payment', label: 'Payment processing', help: 'Per-transaction fees from Stripe, PayPal, ACH provider. Roughly 2.9% + $0.30 per transaction is typical for cards.', row: 2 },
         { id: 'cost-support', label: 'Customer support cost per customer', help: 'Per-customer share of support staff time, ticketing tools, help-center costs. If you support customers personally, your time goes here.', row: 2 },
-        { id: 'cost-time', label: 'Your time on retention &amp; success', help: 'Founder-led activities that scale per customer \u2014 onboarding calls, account reviews, escalations. At what you\'d pay someone else with your skill.', row: 3, full: true }
+        { id: 'cost-time', label: 'Your time on retention &amp; success', help: 'owner-led activities that scale per customer \u2014 onboarding calls, account reviews, escalations. At what you\'d pay someone else with your skill.', row: 3, full: true }
       ]
     }
   };
@@ -1095,7 +1093,7 @@
     if (d.gutPrice > 0 && Math.abs(gutGap) > 0.01) {
       if (gutGap > 0) {
         // defensible is higher than gut
-        gutNote = `<p style="margin-top: 18px;"><strong>Your gut vs. the math.</strong> You said you'd charge $${fmt(d.gutPrice)} today. The math says $${fmt(defensiblePrice)} \u2014 ${gutGapPct}% higher. This is the exact pattern the lesson warns about: founders are way more afraid of pricing too high than too low, and they default to low when the conversation gets uncomfortable. Your numbers say your gut was light. Trust the math.</p>`;
+        gutNote = `<p style="margin-top: 18px;"><strong>Your gut vs. the math.</strong> You said you'd charge $${fmt(d.gutPrice)} today. The math says $${fmt(defensiblePrice)} \u2014 ${gutGapPct}% higher. This is the exact pattern the session warns about: owners are way more afraid of pricing too high than too low, and they default to low when the conversation gets uncomfortable. Your numbers say your gut was light. Trust the math.</p>`;
       } else {
         // defensible is lower than gut
         gutNote = `<p style="margin-top: 18px;"><strong>Your gut vs. the math.</strong> You said you'd charge $${fmt(d.gutPrice)} today. The math says $${fmt(defensiblePrice)} \u2014 ${Math.abs(gutGapPct)}% lower than your gut. That's unusual. Either your costs and margin are lower than they should be, or you're comparing yourself against a peer group that's priced below where you actually belong. If your gut feels closer to right, go back to Step 2 and check your peer set \u2014 you may be looking at the wrong tier.</p>`;
@@ -1104,7 +1102,7 @@
 
     return `
       <header class="output-masthead">
-        <div class="brand-stripe">FOUNDERSPATH  ·  YOUR FIRST PRICE</div>
+        <div class="brand-stripe">Two Weeks Out  ·  YOUR FIRST PRICE</div>
         <h1 class="output-title">First Price<br>for <em>${escape(d.bizName)}</em></h1>
         <p class="output-sub">${escape(d.whatPriced)}</p>
         <div class="output-meta">
@@ -1200,7 +1198,7 @@
             <div class="framing-block-label">PIECE 01  ·  HOW YOU FRAME THE FOUNDING-CLIENT PRICE</div>
             <div class="framing-quote">"${escape(d.positioningStatement)}"</div>
             <div class="framing-coach">
-              <strong>Why this works:</strong> it makes the lower price sound like a choice you made \u2014 not a sign you don't know what to charge. The lesson puts it plainly: <em>"Introductory rate while we build our reference base"</em> sounds completely different from <em>"we're still figuring out what to charge."</em> One sounds like a plan. The other sounds like uncertainty. Buyers go with founders who sound like they have a plan.
+              <strong>Why this works:</strong> it makes the lower price sound like a choice you made \u2014 not a sign you don't know what to charge. The session puts it plainly: <em>"Introductory rate while we build our reference base"</em> sounds completely different from <em>"we're still figuring out what to charge."</em> One sounds like a plan. The other sounds like uncertainty. Buyers go with owners who sound like they have a plan.
             </div>
           </div>
 
@@ -1230,7 +1228,7 @@
         <div class="moves-card">
           <ol>
             <li><strong>Read your script out loud.</strong> Read the founding-client framing and the price-increase trigger to yourself, at the speed you'd actually say them. Listen for hesitation. Listen for soft words sneaking in \u2014 \u201Cjust,\u201D \u201Cfor now,\u201D \u201Cwe're flexible.\u201D Every soft word tells the buyer you don't believe your price. If your sentences come out clean, you're ready.</li>
-            <li><strong>Show your math to one person who knows your business.</strong> Walk them through the cost breakdown, the floor, the market range, and the recommendation. Ask one question: <em>"Where am I wrong?"</em> The most common error founders catch here is undercounted time \u2014 either time per unit or your hourly rate. A second pair of eyes is the protection.</li>
+            <li><strong>Show your math to one person who knows your business.</strong> Walk them through the cost breakdown, the floor, the market range, and the recommendation. Ask one question: <em>"Where am I wrong?"</em> The most common error owners catch here is undercounted time \u2014 either time per unit or your hourly rate. A second pair of eyes is the protection.</li>
             <li><strong>Use your next real conversation as the test.</strong> Lead with the founding-client framing. Say the price. Name the trigger and the future increase. Then stop talking. The first time will feel uncomfortable \u2014 not because the price is wrong, but because saying any price out loud feels like sticking your neck out. By the third conversation, the discomfort fades. You'll learn more from three real conversations than from three more weeks of analysis.</li>
           </ol>
         </div>
@@ -1242,7 +1240,7 @@
       </div>
 
       <div class="signature">
-        <div class="left">FOUNDERSPATH</div>
+        <div class="left">Two Weeks Out</div>
         <div>First Price Worksheet  ·  Setting a First Price When You Have No Track Record  ·  Generated ${today}</div>
       </div>
     `;
@@ -1296,5 +1294,6 @@
   }
 </script>
 
-</body>
-</html>
+
+
+</body></html>
